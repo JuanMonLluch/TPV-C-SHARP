@@ -1,0 +1,883 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProyectoDINT</name>
+    </assembly>
+    <members>
+        <member name="F:ProyectoDINT.AgregarProd.nombProd">
+            <summary>
+            Incicialización de las variables a meter en el producto.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.AgregarProd.btnAgreg_Agreg_Click(System.Object,System.EventArgs)">
+            <summary>
+            Boton de Agregar, guarda en variables los datos
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.AgregarProd.Modificar">
+            <summary>
+            Datos que rellenan el formulario con el producto a modificar.
+            </summary>
+            <param name="dataGridView1">El datagridview de donde se han sacado los valores si se va a
+            modificar.</param>
+        </member>
+        <member name="M:ProyectoDINT.AgregarProd.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metodo que abre un dialogo para subir una imagen, filtrando los archivos que muestra.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.AgregarProd.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.AgregarProd.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.AgregarProd.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Ajustes.#ctor">
+            <summary>
+            Form de ajustes para cambiar el numero de mesas y otras opciones
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Ajustes.Ajustes_Load(System.Object,System.EventArgs)">
+            <summary>
+            Al cargar el form ajustes, pone los botones en no visibles
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.Ajustes.btnMesas_Click(System.Object,System.EventArgs)">
+            <summary>
+            Cuando le da al boton de ajustes de aplicación, pone los ajustes de informes en falso.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.Ajustes.btnInformes_Click(System.Object,System.EventArgs)">
+            <summary>
+            Pone los botones de ajustes de aplicación en no visible
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.Ajustes.btnSalir_Click(System.Object,System.EventArgs)">
+            <summary>
+            Onclick del boton de salir
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.Ajustes.btnGuardarSalir_Click(System.Object,System.EventArgs)">
+            <summary>
+            Onclick para guardar y salir
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.Ajustes.btnDescargarProd_Click(System.Object,System.EventArgs)">
+            <summary>
+            Al darle al boton de descargar informes de productos, lo escribe en un fichero haciendo una consulta y lo guarda.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.Ajustes.btnDescargarCobros_Click(System.Object,System.EventArgs)">
+            <summary>
+            Descarga un txt y lo guarda con todos las ventas realizadas
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProyectoDINT.Ajustes.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Ajustes.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.Ajustes.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.BotonMesas.#ctor">
+            <summary>
+            Boton personalizado para las mesas.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.BotonMesas.mesa">
+            <summary>
+            Guardamos el numero de mesa como propiedad en el botón.        /// </summary>
+        </member>
+        <member name="F:ProyectoDINT.BotonMesas.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.BotonMesas.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ProyectoDINT.BotonMesas.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.BotonProd.#ctor">
+            <summary>
+            Control presonalizado de productos.
+            </summary>
+        </member>
+        <member name="E:ProyectoDINT.BotonProd.evento">
+            <summary>
+            Declaramos el evento del botón de manera publica, y los datos que se recogeran,
+            nombre de producto y precio del mismo.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.BotonProd.produ">
+            <summary>
+            Getters y Setters para nombre de producto y precio.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.BotonProd.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.BotonProd.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ProyectoDINT.BotonProd.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.carga.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.carga.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.carga.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.categorias.#ctor">
+            <summary>
+            Pantalla que carga de la BBDD las categorias que dispongan de productos en la BD.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.categorias.CargarCat">
+            <summary>
+            Metodo que carga dinamicamente botones del tipo especial para categorias,
+            y que les pone el nombre de la categoria a cada uno de ellos, creandoles su evento.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.categorias.controlCat_OnClick(System.Object,System.EventArgs)">
+            <summary>
+            Método del boton de categoria en el cual se llama al formulario de productos, al que se
+            le pasa la correspondiente categoria.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.categorias.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.categorias.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.categorias.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.cobrar.aux4">
+            <summary>
+            Formulario de cobro.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.cobrar.txtboxChange(System.Object,System.EventArgs)">
+            <summary>
+            Metodo que calcula el cambio.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.cobrar.btnCobrarFinal_Click(System.Object,System.EventArgs)">
+            <summary>
+            Botón de cobro, sale de la pantalla de cobro.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.cobrar.cobrar_Load(System.Object,System.EventArgs)">
+            <summary>
+            Metodo que recoge el total del ticket para mostrarlo en este formulario.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.cobrar.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.cobrar.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.cobrar.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.Configuracion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Configuracion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.Configuracion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Form1.#ctor">
+            <summary>
+            Formulario de productos en el que se hace el ticket.
+            </summary>
+            <param name="cat">Recoge el parametro categoria para filtrar los productos a mostrar.</param>
+        </member>
+        <member name="F:ProyectoDINT.Form1.Conexion">
+            <summary>
+            Declaración de variables globales y conectando con BBDD.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Form1.cargaProds">
+            <summary>
+            Metodo que carga los productos dinamicamente de la categoria que el formulario a recogido,
+            creando un evento de cada uno de ellos.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Form1.CargarCat">
+            <summary>
+            Carga las categorias
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Form1.BotonProd_OnClick(System.Object,System.EventArgs)">
+            <summary>
+            Evento en cada boton de producto, que añade fila de producto en el ticket si no existe,
+            y aumenta el campo cantidad si existe.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Form1.sacarTotal">
+            <summary>
+            Metodo que calcula el precio sin IVA, el IVA y el total.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            Al cargar el form carga un label con el numero de mesa
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.Form1.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Botón para ir al menu principal. En caso de no haber cobrado el ticket lo guarda en la bbdd para abrirlo mas tarde.
+            </summary>        
+        </member>
+        <member name="M:ProyectoDINT.Form1.btnCobrar_Click(System.Object,System.EventArgs)">
+            <summary>
+            Botón que lleva a la pantalla de cobro, y carga en la base de datos el importe.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Form1.dataGridView1_CellContentClick(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Método que maneja los botones del data grid view, añadiento productos, restando y eliminando
+            lineas completas.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.InfoUsuario.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.InfoUsuario.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.InfoUsuario.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.listaProducto.#ctor">
+            <summary>
+            Control personalizado de los productos
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.listaProducto.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.listaProducto.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ProyectoDINT.listaProducto.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.login.#ctor">
+            <summary>
+            Formulario de login.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.login.login_Load(System.Object,System.EventArgs)">
+            <summary>
+            Método que al cargar el formulario de login muestra el cuadro de ayuda si es la primera vez que entras
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.login.lnkContOlvid_login_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+            <summary>
+            Evento de botón olvide conrtraseña, que lleva a un nuevo formulario donde recuperarla.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.login.btnLogin_login_Click(System.Object,System.EventArgs)">
+            <summary>
+            Botón para logearte que comprueba tus datos en la BD.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.login.lnkRegistrar_login_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+            <summary>
+            Evento del botón de registro, que lleva a un form donde nos podemos registrar.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.login.txtboxPass_login_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            Metodo para hacer lo mismo que el login_onclick pero al pulsar INTRO
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProyectoDINT.login.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.login.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.login.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Menu.#ctor">
+            <summary>
+            Formulario de menú para navegar entre diferentes pantallas.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Menu.btnSalirMenu_Click(System.Object,System.EventArgs)">
+            <summary>
+            Botón salir, que te lleva al formulario de login.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Menu.btnProduct_Click(System.Object,System.EventArgs)">
+            <summary>
+            Botón de productos, que te lleva a la pantalla donde estan los productos, y que da acceso a modificar,
+            a borra o a introducir nuevos. Solo te deja entrar si eres encargado o admin
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Menu.Menu_Resize(System.Object,System.EventArgs)">
+            <summary>
+            Método que redimensiona y coloca los botones correctamente.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Menu.btnCofig_Click(System.Object,System.EventArgs)">
+            <summary>
+            Botón que da acceso al formulario del tutorial.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Menu.Menu_Load(System.Object,System.EventArgs)">
+            <summary>
+            Al cargar el form, detecta que cargo tienes para permitirte o no el acceso a diferentes lugares.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.Menu.btnMesas_Menu_Click(System.Object,System.EventArgs)">
+            <summary>
+            Botón que da acceso al formulario de mesas para añadirles posteriormente pedidos al ticket.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Menu.btnImagUsuAct_Click(System.Object,System.EventArgs)">
+            <summary>
+            Carga el form de modificar y gestionar el usuario
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.Menu.btnAjustes_Click(System.Object,System.EventArgs)">
+            <summary>
+            Para ir a la pantalla de ajustes.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProyectoDINT.Menu.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Menu.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.Menu.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.MesaAbierta.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.MesaAbierta.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ProyectoDINT.MesaAbierta.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Mesas.#ctor">
+            <summary>
+            Formulario de mesas que crea 9 botones mesa desde los que se accede a la pantalla de
+            categorias.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.Mesas.numeroMesa">
+            <summary>
+            Cargamos las mesas como botones con sus metodos, preguntando antes si es la primera vez cuantas mesas va a tener.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Mesas.mesabierta_onClick(System.Object,System.EventArgs)">
+            <summary>
+            Onclick del ticket abierto
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.Mesas.botonMesas_click(System.Object,System.EventArgs)">
+            <summary>
+            Método de los botones mesa que llevan a la pantalla de categoria, guardando en nuMesa el 
+            número de mesa que corresponde.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Mesas.btnSalir_Click(System.Object,System.EventArgs)">
+            <summary>
+            Boton de salir
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProyectoDINT.Mesas.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Mesas.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.Mesas.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.PregMesaCaja.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.PregMesaCaja.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.PregMesaCaja.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.PregMesas.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.PregMesas.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.PregMesas.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.productos.Conexion">
+            <summary>
+            Formulario de productos, donde vemos los que tenemos con detalle, y nos da acceso a 
+            introducir nuevos.
+            </summary>
+            <summary>
+            Empezamos preparando la creando las variables locales donde almacenaremos los datos.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.productos.btnAgreg_Prod_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento del botón añadir producto que abrirá un formulario de agregar producto,
+            y si se finaliza adecuadamente, lo meterá en el control personalizado y en la BD. 
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.productos.convertirAvatarAByte(System.String)">
+            <summary>
+            Método que convierte la imagen en bytes.
+            </summary>
+            <param name="filePath">Solicita la ruta de la imagén.</param>
+            <returns>Devuelve la imagén convertida en bytes.</returns>
+        </member>
+        <member name="M:ProyectoDINT.productos.recargar">
+            <summary>
+            Metodo para leer la bbdd y mostrar todos los productos en su control personalizado
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.productos.borrar_click(System.Object,System.EventArgs)">
+            <summary>
+            Evento del botón borrar, que elimina el producto de la BD.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.productos.producto_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento del botón modificar producto, que abre una pantalla de modificar producto, 
+            a la cual, le pasa los datos del producto que esta seleccionado.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.productos.productos_Load(System.Object,System.EventArgs)">
+            <summary>
+            Cuando carga el form llama a recargar.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:ProyectoDINT.productos.btnAtras_prod_Click(System.Object,System.EventArgs)">
+            <summary>
+            Boton de salir
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProyectoDINT.productos.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.productos.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.productos.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.RecCont.btnEnviarCorreo_Click(System.Object,System.EventArgs)">
+            <summary>
+            Metodo Onclick para enviar un correo de recuperar contraseña a traves de smtp send Email
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:ProyectoDINT.RecCont.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.RecCont.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.RecCont.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.Registro.cargo">
+            <summary>
+            Se declaran las variables globales.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Registro.btnCancelarReg_Click(System.Object,System.EventArgs)">
+            <summary>
+            Método del botón cancelar que vuelve al login.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Registro.btnRegRegistrar_Click(System.Object,System.EventArgs)">
+            <summary>
+            Método del botón regstrarse, que comprueba que todo esta rellenado correctamente,
+            y lo introduce en la base de datos de usuarios.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.Registro.components">
+            <summary>
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Registro.Dispose(System.Boolean)">
+            <summary>
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ProyectoDINT.Registro.InitializeComponent">
+            <summary>
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Program.Main">
+            <summary>
+            Punto de entrada principal para la aplicación.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Tutorial.#ctor">
+            <summary>
+            Formulario del tutorial.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.Tutorial.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.Tutorial.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ProyectoDINT.Tutorial.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.controlCat.#ctor">
+            <summary>
+            Boton personalizados de categorias.
+            </summary>
+        </member>
+        <member name="E:ProyectoDINT.controlCat.evento">
+            <summary>
+            Declaración del evento publico, y de un string para guardar la categoria, con su setter y su setter.
+            </summary>
+        </member>
+        <member name="F:ProyectoDINT.controlCat.components">
+            <summary> 
+            Variable del diseñador necesaria.
+            </summary>
+        </member>
+        <member name="M:ProyectoDINT.controlCat.Dispose(System.Boolean)">
+            <summary> 
+            Limpiar los recursos que se estén usando.
+            </summary>
+            <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        </member>
+        <member name="M:ProyectoDINT.controlCat.InitializeComponent">
+            <summary> 
+            Método necesario para admitir el Diseñador. No se puede modificar
+            el contenido de este método con el editor de código.
+            </summary>
+        </member>
+        <member name="T:ProyectoDINT.Properties.Resources">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources._2d4e09879b6f017f74ffaee0b0011c0a_icono_de_ojo_by_vexels">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources._3643764_back_backward_left_reply_turn_113415">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources._58452">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources._585e4beacb11b227491c3399">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.button_computer_icons_clip_art_exit">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.Captura_de_pantalla__206_">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.cerrar_borrar_boton_eliminar_318_9073">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.fondo_degradado_morado_71220_5">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.fondo_degradado_naranja_estilo_moderno_74154_41">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.fondo_madera_negro">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.horizontal_line">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.icono_modificar_png_6">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.orange_black_gradient_photy_org">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ProyectoDINT.Properties.Resources.piso_madera_clara_53876_92977">
+            <summary>
+              Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

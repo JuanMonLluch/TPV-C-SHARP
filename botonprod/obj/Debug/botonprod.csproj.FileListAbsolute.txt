@@ -1,0 +1,7 @@
+C:\Users\Usuario\source\repos\ProyectoDINT\botonprod\bin\Debug\botonprod.dll
+C:\Users\Usuario\source\repos\ProyectoDINT\botonprod\bin\Debug\botonprod.pdb
+C:\Users\Usuario\source\repos\ProyectoDINT\botonprod\obj\Debug\botonprod.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\ProyectoDINT\botonprod\obj\Debug\botonprod.UserControl1.resources
+C:\Users\Usuario\source\repos\ProyectoDINT\botonprod\obj\Debug\botonprod.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\ProyectoDINT\botonprod\obj\Debug\botonprod.dll
+C:\Users\Usuario\source\repos\ProyectoDINT\botonprod\obj\Debug\botonprod.pdb

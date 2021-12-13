@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A37B5A78-4BAF-4D7E-B3F8-11F4EFF5813D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoDINT</RootNamespace>
+    <AssemblyName>ProyectoDINT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ProyectoDINT.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logotpv.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InputKey">
+      <HintPath>..\..\InputKey\InputKey.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.Data.EntityFrameworkCore.Design, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarProd.Designer.cs">
+      <DependentUpon>AgregarProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajustes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajustes.Designer.cs">
+      <DependentUpon>Ajustes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BotonMesas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BotonMesas.Designer.cs">
+      <DependentUpon>BotonMesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BotonProd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BotonProd.Designer.cs">
+      <DependentUpon>BotonProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carga.Designer.cs">
+      <DependentUpon>carga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="categorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="categorias.Designer.cs">
+      <DependentUpon>categorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobrar.Designer.cs">
+      <DependentUpon>cobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion.Designer.cs">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoUsuario.Designer.cs">
+      <DependentUpon>InfoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="listaProducto.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="listaProducto.Designer.cs">
+      <DependentUpon>listaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MesaAbierta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MesaAbierta.Designer.cs">
+      <DependentUpon>MesaAbierta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mesas.Designer.cs">
+      <DependentUpon>Mesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PregMesaCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregMesaCaja.Designer.cs">
+      <DependentUpon>PregMesaCaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PregMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregMesas.Designer.cs">
+      <DependentUpon>PregMesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productos.Designer.cs">
+      <DependentUpon>productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecCont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecCont.Designer.cs">
+      <DependentUpon>RecCont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro.Designer.cs">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tutorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tutorial.Designer.cs">
+      <DependentUpon>Tutorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AgregarProd.resx">
+      <DependentUpon>AgregarProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajustes.resx">
+      <DependentUpon>Ajustes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BotonMesas.resx">
+      <DependentUpon>BotonMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BotonProd.resx">
+      <DependentUpon>BotonProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carga.resx">
+      <DependentUpon>carga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="categorias.resx">
+      <DependentUpon>categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobrar.resx">
+      <DependentUpon>cobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoUsuario.resx">
+      <DependentUpon>InfoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listaProducto.resx">
+      <DependentUpon>listaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MesaAbierta.resx">
+      <DependentUpon>MesaAbierta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mesas.resx">
+      <DependentUpon>Mesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregMesaCaja.resx">
+      <DependentUpon>PregMesaCaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productos.resx">
+      <DependentUpon>productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RecCont.resx">
+      <DependentUpon>RecCont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro.resx">
+      <DependentUpon>Registro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tutorial.resx">
+      <DependentUpon>Tutorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla %28206%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-computer-icons-clip-art-exit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\58452.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\585e4beacb11b227491c3399.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643764-back-backward-left-reply-turn_113415.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal-line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar-borrar-boton-eliminar_318-9073.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono-modificar-png-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-madera-negro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piso-madera-clara_53876-92977.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2d4e09879b6f017f74ffaee0b0011c0a-icono-de-ojo-by-vexels.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-degradado-morado_71220-5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo-degradado-naranja-estilo-moderno_74154-41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange-black-gradient-photy.org.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logotpv.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
